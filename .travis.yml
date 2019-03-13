@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: mlk7xbrB0go8wWAFi9wOIkJ8N1r/pBrRfxLX2pkfKAC1rq1c8B8x1IXmE75E08m0b3C9g5elgPYScfsqSh6MtWNiWszEr5nS1jzN5WqsH7DBmFUGnYwVN2xTo+RethXxj8XXcdMlPKg4Jijl5IdhKwJrknsUSuh3J9EUOd7sIqvWq7QnXJa1CjYVR9KuPnlFUZUkfRBiurc3JGad0bmGSPYnCWXkmJZxL9+P1MJNvvXZ35oqnJ48AOg6uY8pUxZy3RdZaWBi4Ajbn98vKCAtEjdo2rc4/bf6RM43m/G68YVjubOr1A0K8sHW/Mo2gxkdQmy2DCA15OBAstWwxFEnPvUkYCa4ogqCJj2Iky4LgbBn/hwI9vgNMr6xdPVVVgBKU7a5ZrImR4m0+17hOxoLBTjQQBP/EKtauCY+qU+HDFnnbJjeg5UmR6mwsC86jFvPk0Nozoz2sL54Hc9g/hEctgFsL1BWyRf+/xDTfyvviG6Ee4zIAQKXiqbx8X+HZH7h+D6uz3TRxxr9QfD90d/6750Zdpq9omdgsksFlIy+c0peG2aAUygycgyQaD2Q90DDxt5BsbomGU/0xqmw3qWGClMmSyteNvi6ipJtw4Qt5XzrHnDn9T1n6pf6TdizOc7T+fLwI3ZdyRR0FO38wwpYgEV+3SjSgOi3vrLMd3Cxttg=
+  app: aqueous-refuge-99349
+  on:
+    repo: rposner16/react-trello-testing
